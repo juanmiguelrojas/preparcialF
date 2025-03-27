@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Tienda</title>
+    <link rel="stylesheet" href="prepa.css">
+</head>
+<body>
+    <h1>Inventario de Tienda</h1>
+    
+    <form id="productForm">
+        <input type="text" id="name" placeholder="Nombre del producto" required>
+        <input type="number" id="price" placeholder="Precio" required>
+        <input type="number" id="quantity" placeholder="Cantidad" required>
+        <button type="submit">Agregar Producto</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="productos">
+            <!-- Aquí se insertarán los productos dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="prepa.js"></script>
+</body>
+</html>
